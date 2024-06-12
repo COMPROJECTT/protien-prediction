@@ -1,5 +1,8 @@
 # This is app is created by Chanin Nantasenamat (Data Professor) https://youtube.com/dataprofessor
 # Credit: This app is inspired by https://huggingface.co/spaces/osanseviero/esmfold
+import requests
+
+response = requests.post('https://api.esmatlas.com/foldSequence/v1/...', verify=False, ...)
 
 import streamlit as st
 from stmol import showmol
