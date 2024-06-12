@@ -1,4 +1,6 @@
-!pip install stmol
+!pip install streamlit stmol
+!pip install numpy
+!pip install matplotlib
 import streamlit as st
 from stmol import showmol
 import py3Dmol
