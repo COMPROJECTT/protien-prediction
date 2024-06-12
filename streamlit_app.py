@@ -28,7 +28,7 @@ def update(sequence=txt):
     headers = {
         'Content-Type': 'application/x-www-form-urlencoded',
     }
-    response = requests.post('https://api.esmatlas.com/foldSequence/v1/pdb/', verify=false, headers=headers, data=sequence)
+    response = requests.post('https://api.esmatlas.com/foldSequence/v1/pdb/', verify=False, headers=headers, data=sequence)
     name = sequence[:3] + sequence[-3:]
     pdb_string = response.content.decode('utf-8')
 
