@@ -43,9 +43,8 @@ def update(sequence=txt):
     render_mol(pdb_string)
 
     # plDDT value is stored in the B-factor field
-    st.subheader('plDDT')
-    st.write('plDDT is a per-residue estimate of the confidence in prediction on a scale from 0-100.')
-    st.info(f'plDDT: {b_value}')
+    st.subheader('DISCLAIMER')
+    st.write('This website is made as a part of Big Data Assignment and strictly not for productive use.')
 
     st.download_button(
         label="Download PDB",
